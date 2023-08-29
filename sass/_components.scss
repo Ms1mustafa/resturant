@@ -153,6 +153,11 @@
     margin-bottom: 10rem;
   }
 
+  @media only screen and (max-width: $bp-smallest) {
+    margin-top: 26rem;
+    margin-bottom: 6rem;
+  }
+
   &__img {
     position: absolute;
     height: 10rem;
