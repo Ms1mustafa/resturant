@@ -28,7 +28,7 @@ const btnText = document.querySelector(".btn");
 const menuImg = document.querySelector(".menuImg__img");
 
 function handleScrollMenu() {
-  if (isElementPartiallyInViewport(menu, 30)) {
+  if (isElementPartiallyInViewport(menu, 50)) {
     menuTitleHeadingPrimary.style.animation = 'moveInRight 0.7s ease-out';
     menuTitleHeadingSecondary.style.animation = 'moveInLeft 0.7s ease-out';
     menuImg.style.animation = 'moveInLeft 0.7s ease-out .3s';

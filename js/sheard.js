@@ -20,7 +20,7 @@ export const themeFunction = function () {
       theme.style.backgroundImage =
         "linear-gradient(to right bottom, #fff, #f2f2f2)";
       // container.style.backgroundImage = "linear-gradient(to right, #161616, #383838)";
-      container.style.backgroundImage = "url(img/black-gradient.jpg)";
+      container.style.backgroundImage = "linear-gradient(to right bottom, #121212, #272727)";
       root.style.setProperty("--color-Primary-dark1", "#faf9f9");
       root.style.setProperty("--color-Primary-dark2", "#EFC453");
       themeCheck.checked = true;
@@ -29,7 +29,7 @@ export const themeFunction = function () {
     } else {
       theme.style.backgroundImage =
         "linear-gradient(to right bottom, var(--color-blue-light), var(--color-blue-dark))"; // Reset the background image if unchecked
-      container.style.backgroundImage = "url(img/white-gradient.jpg)";
+      container.style.backgroundImage = "linear-gradient(to right bottom, #fafafc, #fafafc)";
       root.style.setProperty("--color-Primary-dark1", "#593101");
       root.style.setProperty("--color-Primary-dark2", "#B77222");
       themeCheck.checked = false;
