@@ -20,7 +20,6 @@
     flex-wrap: wrap;
   }
 }
-
 .content,
 .menu {
   display: flex;
@@ -33,6 +32,10 @@
     flex-direction: column-reverse;
     padding: 10rem 0;
   }
+}
+
+.menu{
+  padding: 5rem 0;
 }
 
 .mainTilte {

@@ -111,6 +111,9 @@ body {
       flex-direction: column-reverse;
       padding: 10rem 0; } }
 
+.menu {
+  padding: 5rem 0; }
+
 .mainTilte {
   flex: 0 0 60%;
   display: flex;
