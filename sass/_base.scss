@@ -1,0 +1,59 @@
+:root {
+  --color-Primary: #F49B34;
+  --color-Primary-light: #EFC453;
+  --color-Primary-dark1: #593101;
+  --color-Primary-dark2: #B77222;
+
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+
+  --color-night: #161616;
+
+  --color-blue-light: #28176daf;
+  --color-blue-dark: #190956;
+
+  --shadow-dark: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+$bp-largest: 75em;    //1200px
+$bp-large: 68.75em;    //1100px
+$bp-meduim: 56.25em;    //900px
+$bp-small: 37.5em;    //600px
+$bp-smallest: 25em;  //400px
+
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+  scroll-behavior: smooth;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "El Messiri", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-dark-2);
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  direction: rtl;
+  height: 100vh;
+}

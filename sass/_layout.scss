@@ -1,0 +1,107 @@
+.container {
+  background-image: url(../img/white-gradient.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: var(--color-grey-light-1);
+  box-shadow: 2px 2px 10px #0000000a;
+
+  @media only screen and (max-width: $bp-meduim) {
+    flex-wrap: wrap;
+  }
+}
+
+.content,
+.menu {
+  display: flex;
+  padding: 24rem 0;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+
+  @media only screen and (max-width: $bp-meduim) {
+    flex-direction: column-reverse;
+    padding: 10rem 0;
+  }
+}
+
+.mainTilte {
+  flex: 0 0 60%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (max-width: $bp-meduim) {
+    margin-top: 10rem;
+  }
+}
+
+.mainImg {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-meals {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20rem 0;
+  overflow: hidden;
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  background-color: orangered;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(244, 155, 52, 0.9),
+      rgba(239, 196, 83, 0.9)
+    ),
+    url(../img/topBack.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  @media only screen and (max-width: $bp-large) {
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  }
+}
+
+.footer {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(244, 155, 52, 0.9),
+      rgba(239, 196, 83, 0.9)
+    ),
+    url(../img/topBack.jpg);
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 7rem 1rem;
+  overflow: hidden;
+
+  @media only screen and (max-width: $bp-small) {
+    flex-wrap: wrap;
+    // padding: 2rem 0;
+    text-align: center;
+    -webkit-clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%);
+  }
+}
