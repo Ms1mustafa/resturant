@@ -97,6 +97,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .header {
       flex-wrap: wrap; } }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      position: relative; } }
 
 .content,
 .menu {
@@ -109,10 +112,10 @@ body {
     .content,
     .menu {
       flex-direction: column-reverse;
-      padding: 10rem 0; } }
+      padding: 0; } }
 
 .menu {
-  padding: 5rem 0; }
+  padding: 10rem 0; }
 
 .mainTilte {
   flex: 0 0 60%;
@@ -152,6 +155,8 @@ body {
 
 .footer {
   background-image: linear-gradient(to right bottom, rgba(244, 155, 52, 0.9), rgba(239, 196, 83, 0.9)), url(../img/topBack.jpg);
+  background-size: cover;
+  background-position: top;
   -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
   display: flex;

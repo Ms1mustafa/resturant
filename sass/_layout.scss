@@ -20,6 +20,9 @@
   @media only screen and (max-width: $bp-meduim) {
     flex-wrap: wrap;
   }
+  @media only screen and (max-width: $bp-meduim) {
+    position: relative;
+  }
 }
 .content,
 .menu {
@@ -31,12 +34,12 @@
 
   @media only screen and (max-width: $bp-meduim) {
     flex-direction: column-reverse;
-    padding: 10rem 0;
+    padding: 0;
   }
 }
 
-.menu{
-  padding: 5rem 0;
+.menu {
+  padding: 10rem 0;
 }
 
 .mainTilte {
@@ -93,6 +96,8 @@
       rgba(239, 196, 83, 0.9)
     ),
     url(../img/topBack.jpg);
+  background-size: cover;
+  background-position: top;
   -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
   display: flex;

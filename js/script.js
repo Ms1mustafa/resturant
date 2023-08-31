@@ -50,7 +50,7 @@ const footer = document.querySelector(".footer");
 const footerItems = document.querySelectorAll(".footer__item");
 
 function handleScrollFooter() {
-  if (isElementPartiallyInViewport(footer, 50)) {
+  if (isElementPartiallyInViewport(footer, 70)) {
     footerItems.forEach((item, index) => {
       setTimeout(() => {
         item.classList.add("footer__item--animation");
