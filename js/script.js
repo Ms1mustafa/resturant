@@ -70,4 +70,3 @@ window.addEventListener("scroll", handleScrollFooter);
   .catch(error => {
     console.error('Error fetching IP address:', error);
   });*/
-console.log('ssdcfds');
