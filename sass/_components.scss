@@ -149,12 +149,12 @@
   filter: drop-shadow(4px 2px 2px #ffe38d43);
 
   @media only screen and (max-width: $bp-meduim) {
-    margin-top: 30rem;
+    margin-top: 25rem;
     margin-bottom: 10rem;
   }
 
   @media only screen and (max-width: $bp-smallest) {
-    margin-top: 26rem;
+    margin-top: 20rem;
     margin-bottom: 6rem;
   }
 
@@ -219,6 +219,35 @@
       animation: moveDown 0.5s ease-in-out 4.5s;
       animation-fill-mode: backwards;
       height: 12rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      height: 8rem;
+      width: 20rem;
+
+      &--3 {
+        transform: translateY(-4rem);
+      }
+      &--4 {
+        transform: translateY(-5rem);
+      }
+      &--5 {
+        transform: translateY(-7rem);
+      }
+      &--6 {
+        transform: translateY(-9rem);
+      }
+      &--7 {
+        transform: translateY(-11rem);
+        width: 21rem;
+      }
+      &--8 {
+        transform: translateY(-12rem);
+      }
+      &--9 {
+        transform: translateY(-15.7rem);
+        height: 10rem;
+      }
     }
   }
 }

@@ -279,11 +279,11 @@ body {
   filter: drop-shadow(4px 2px 2px #ffe38d43); }
   @media only screen and (max-width: 56.25em) {
     .burger {
-      margin-top: 30rem;
+      margin-top: 25rem;
       margin-bottom: 10rem; } }
   @media only screen and (max-width: 25em) {
     .burger {
-      margin-top: 26rem;
+      margin-top: 20rem;
       margin-bottom: 6rem; } }
   .burger__img {
     position: absolute;
@@ -336,6 +336,26 @@ body {
       animation: moveDown 0.5s ease-in-out 4.5s;
       animation-fill-mode: backwards;
       height: 12rem; }
+    @media only screen and (max-width: 25em) {
+      .burger__img {
+        height: 8rem;
+        width: 20rem; }
+        .burger__img--3 {
+          transform: translateY(-4rem); }
+        .burger__img--4 {
+          transform: translateY(-5rem); }
+        .burger__img--5 {
+          transform: translateY(-7rem); }
+        .burger__img--6 {
+          transform: translateY(-9rem); }
+        .burger__img--7 {
+          transform: translateY(-11rem);
+          width: 21rem; }
+        .burger__img--8 {
+          transform: translateY(-12rem); }
+        .burger__img--9 {
+          transform: translateY(-15.7rem);
+          height: 10rem; } }
 
 @media only screen and (min-width: 68.75em) {
   .burger:hover .burger__img--1 {
