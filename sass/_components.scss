@@ -252,7 +252,7 @@
   }
 }
 
-@media only screen and (min-width: $bp-large) {
+@media not all and (hover: none) and (pointer: coarse) {
   .burger:hover .burger__img {
     &--1 {
       transform: translateY(11rem);
